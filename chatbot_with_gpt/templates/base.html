@@ -1,0 +1,18 @@
+{% load django_bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="icon" href="{% static 'images/django-development-logo.png' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}{% endblock content %}
+    {% block script %}{% endblock script %}
+</body>
+</html>
